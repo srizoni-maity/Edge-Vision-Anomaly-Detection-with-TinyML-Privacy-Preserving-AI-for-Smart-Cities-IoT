@@ -10,24 +10,38 @@ Edge-Vision: TinyML-Powered Anomaly Detection
 🌍 Background & Motivation
 Modern urban environments and industrial facilities generate enormous volumes of visual data through distributed IoT sensors and CCTV networks. Traditional cloud-based processing approaches face significant challenges:
 ❌ High latency impedes real-time response capabilities
+
 ❌ Substantial bandwidth consumption creates network bottlenecks
+
 ❌ Energy-intensive processing contradicts sustainability goals
+
 ❌ Privacy vulnerabilities from transmitting sensitive visual data
 
 Our solution: Leverage TinyML to perform intelligent anomaly detection directly on edge devices, enabling:
 ✅ Real-time inference with minimal latency
+
 ✅ Significant bandwidth and energy conservation
+
 ✅ Enhanced privacy through on-device data processing
+
 ✅ Reduced operational costs for large-scale deployments
 
 This project implements a highly optimized, quantized convolutional neural network distilled from a vision transformer backbone, deployable on resource-constrained hardware (Jetson Nano, Coral TPU, Raspberry Pi). The system detects anomalies—from manufacturing defects to security incidents—while preserving privacy through integrated on-device blurring of sensitive regions.
-✨ Key Features
+
+✨ Key Features :
+
 📊 Standardized Benchmarking: Utilizes the MVTec-AD dataset for industrial anomaly detection
+
 🧠 Advanced Architectures: Implements and compares AutoEncoder (AE), PatchCore, and SimCLR approaches
+
 🔄 Model Compression: Employs knowledge distillation from large transformer to compact CNN
+
 📉 Hardware Optimization: Applies quantization-aware training and pruning for edge deployment
+
 🔒 Privacy by Design: Integrates on-device sensitive region blurring before inference
+
 ⚡ Performance Analysis: Comprehensive evaluation of FPS/latency vs. accuracy vs. energy consumption
+
 🎥 Real-time Demonstration: Complete pipeline showcasing live anomaly detection with visual overlays
 
 Project Structure :
