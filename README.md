@@ -45,55 +45,8 @@ This project implements a highly optimized, quantized convolutional neural netwo
 
 🎥 Real-time Demonstration: Complete pipeline showcasing live anomaly detection with visual overlays
 
-## Project Structure :
-edge_vision_anomaly_detection/
-│
-├── data/                           # Dataset and sample assets
-│   ├── mvtec/                      # MVTec-AD dataset (optional)
-│   └── sample_video.mp4            # Demonstration video
-│
-├── models/                         # Model definitions and weights
-│   ├── baseline_ae.pth             # Autoencoder baseline
-│   ├── distilled_cnn.pth           # Distilled compact model
-│   └── quantized_cnn.tflite        # Quantized model for deployment
-│
-├── results/                        # Output directory
-│   ├── training_metrics/           # Training logs and metrics
-│   ├── performance/                # Hardware performance results
-│   │   ├── accuracy_vs_latency.png
-│   │   ├── energy_profile.png
-│   │   └── hardware_benchmark.csv
-│   └── demonstrations/             # Inference examples
-│       └── anomaly_detection_demo.mp4
-│
-├── src/                            # Source code
-│   ├── data_processing/            # Data utilities
-│   │   ├── mvtec_dataset.py        # MVTec-AD dataset handler
-│   │   └── privacy_preprocessor.py # Privacy preservation modules
-│   ├── models/                     # Model architectures
-│   │   ├── autoencoder.py          # AE implementation
-│   │   ├── patchcore.py            # PatchCore implementation
-│   │   └── knowledge_distillation.py # Distillation training
-│   ├── training/                   # Training routines
-│   │   └── train_utils.py          # Training utilities
-│   ├── evaluation/                 # Evaluation metrics
-│   │   └── eval_mvtec.py           # MVTec evaluation protocol
-│   ├── inference/                  # Deployment modules
-│   │   ├── edge_inferencer.py      # Hardware-specific inference
-│   │   └── anomaly_visualizer.py   # Visualization utilities
-│   ├── utils/                      # Helper functions
-│   │   ├── config.py               # Configuration management
-│   │   └── logger.py               # Logging utilities
-│   ├── main.py                     # Main training/evaluation script
-│   └── demo.py                     # Demonstration pipeline
-│
-├── tests/                          # Unit tests
-├── docs/                           # Additional documentation
-├── requirements.txt                # Python dependencies
-├── environment.yml                 # Conda environment setup
-└── README.md                       # This document
 
-⚙️ Installation & Setup
+## Installation & Setup
 Option 1: Pip Installation 
 ### Clone repository
 git clone https://github.com/srizoni-maity/Edge-Vision-Anomaly-Detection-with-TinyML-Privacy-Preserving-AI-for-Smart-Cities-IoT
@@ -165,36 +118,44 @@ https://results/performance/accuracy_vs_latency.png
 Trade-off between detection accuracy and inference latency
 
 
-🌐 Application Scenarios
-🏭 Smart Manufacturing
+## Application Scenarios
+
+🏭 Smart Manufacturing:
+
 Real-time defect detection on production lines without cloud dependency, enabling immediate quality control interventions.
 
-🏙️ Urban Surveillance
+🏙️ Urban Surveillance:
+
 Privacy-aware monitoring of public spaces with local processing that only transmits alerts rather than continuous footage.
 
-🏥 Healthcare IoT
+🏥 Healthcare IoT:
+
 On-device analysis of medical imaging streams while maintaining strict patient privacy through localized processing.
 
-🔒 Privacy-Sensitive Environments
+🔒 Privacy-Sensitive Environments:
+
 Edge deployment in settings where data cannot leave the premises due to regulatory or security constraints.
 
-Example Output Visualization
+Example Output Visualization - 
 https://results/demonstrations/anomaly_detection_demo.gif
 Red-highlighted regions indicate detected anomalies with confidence scores
 
-🔮 Future Enhancements
+🔮 Future Enhancements :
+
 Hardware Acceleration: Integration with ONNX Runtime and TensorRT for maximum inference speed
 Multi-Modal Learning: Fusion of visual data with complementary sensor inputs (thermal, depth, etc.)
 Adaptive Learning: Continuous on-device model refinement based on new data patterns
 Federated Learning: Privacy-preserving collaborative model improvement across edge devices
 Extended Benchmarking: Support for additional anomaly detection datasets and scenarios
 
-👥 Authors
+👥 Authors:
+
 Srizoni Maity & Baishakhi Sing 
 Project Development & Research
 
 
-🙏 Acknowledgments
+🙏 Acknowledgments :
+
 We thank the creators of the MVTec-AD dataset for providing a standardized benchmark for anomaly detection research.
 
 
