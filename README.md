@@ -99,10 +99,10 @@ Option 1: Pip Installation
 git clone https://github.com/srizoni-maity/Edge-Vision-Anomaly-Detection-with-TinyML-Privacy-Preserving-AI-for-Smart-Cities-IoT
 cd edge_vision_anomaly_detection
 
-# Create and activate virtual environment
+### Create and activate virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/MacOS
-# or
+## or
 .\venv\Scripts\activate   # Windows
 
 # Install dependencies
