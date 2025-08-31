@@ -9,6 +9,7 @@ Edge-Vision: TinyML-Powered Anomaly Detection
 
 🌍 Background & Motivation
 Modern urban environments and industrial facilities generate enormous volumes of visual data through distributed IoT sensors and CCTV networks. Traditional cloud-based processing approaches face significant challenges:
+
 ❌ High latency impedes real-time response capabilities
 
 ❌ Substantial bandwidth consumption creates network bottlenecks
@@ -44,7 +45,7 @@ This project implements a highly optimized, quantized convolutional neural netwo
 
 🎥 Real-time Demonstration: Complete pipeline showcasing live anomaly detection with visual overlays
 
-Project Structure :
+## Project Structure :
 edge_vision_anomaly_detection/
 │
 ├── data/                           # Dataset and sample assets
