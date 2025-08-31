@@ -1,9 +1,14 @@
 # Edge-Vision: TinyML-Powered Anomaly Detection
 https://img.shields.io/badge/TinyML-Edge%2520Computing-blue
+
 https://img.shields.io/badge/Privacy-Preserving-green
+
 https://img.shields.io/badge/Python-3.8%252B-yellow
+
 https://img.shields.io/badge/License-Apache%25202.0-orange
+
 Edge-Vision: TinyML-Powered Anomaly Detection
+
 
 ⚡ On-device anomaly detection — Deploying efficient, privacy-preserving computer vision models for smart infrastructure, IoT, and Industry 4.0 applications.
 
