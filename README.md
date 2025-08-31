@@ -1,4 +1,4 @@
-### Edge-Vision: TinyML-Powered Anomaly Detection
+# Edge-Vision: TinyML-Powered Anomaly Detection
 https://img.shields.io/badge/TinyML-Edge%2520Computing-blue
 https://img.shields.io/badge/Privacy-Preserving-green
 https://img.shields.io/badge/Python-3.8%252B-yellow
@@ -95,7 +95,7 @@ edge_vision_anomaly_detection/
 
 ⚙️ Installation & Setup
 Option 1: Pip Installation 
-# Clone repository
+### Clone repository
 git clone https://github.com/srizoni-maity/Edge-Vision-Anomaly-Detection-with-TinyML-Privacy-Preserving-AI-for-Smart-Cities-IoT
 cd edge_vision_anomaly_detection
 
@@ -105,11 +105,11 @@ source venv/bin/activate  # Linux/MacOS
 ## or
 .\venv\Scripts\activate   # Windows
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
 Option 2: Conda Installation
-# Create conda environment
+### Create conda environment
 conda env create -f environment.yml
 conda activate edge-vision
 
@@ -117,40 +117,40 @@ Hardware-Specific Setup
 For deployment on specific edge devices, additional setup may be required:
 
 NVIDIA Jetson Nano:
-# Install JetPack components
+### Install JetPack components
 sudo apt-get install python3-pip libopenblas-base libopenmpi-dev
 pip install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v50 tensorflow-gpu
 Coral TPU:
-# Install Edge TPU runtime
+### Install Edge TPU runtime
 sudo apt-get install edgetpu-compiler python3-pycoral
 🚀 Usage Examples
 
 Quick Start with Synthetic Data :
-# Train a compact autoencoder on synthetic data
+### Train a compact autoencoder on synthetic data
 python src/main.py --mode quick_train --epochs 30 --output_dir results/quick_run
 
-# Evaluate model performance
+### Evaluate model performance
 python src/main.py --mode evaluate --model_path results/quick_run/tiny_ae.pth
 
 Generate Demonstration Video :
-# Create sample video with synthetic anomalies
+### Create sample video with synthetic anomalies
 python src/utils/create_sample_video.py --output data/sample_video.mp4
 
-# Run inference on sample video
+### Run inference on sample video
 python src/demo.py --video data/sample_video.mp4 --model models/quantized_cnn.tflite --output results/demo_output.mp4
 
 Full Training on MVTec-AD (Requires Dataset)
-# Train on specific MVTec category
+### Train on specific MVTec category
 python src/main.py --mode train --dataset_path data/mvtec --category bottle --epochs 100 --batch_size 32
 
-# Knowledge distillation from teacher to student model
+### Knowledge distillation from teacher to student model
 python src/training/knowledge_distillation.py --teacher models/patchcore.pth --student models/tiny_cnn.pth --dataset data/mvtec/hazelnut
 
 Hardware Benchmarking :
-# Benchmark model on available hardware
+### Benchmark model on available hardware
 python src/inference/edge_inferencer.py --model models/quantized_cnn.tflite --benchmark --runs 1000
 
-# Compare energy consumption across devices
+### Compare energy consumption across devices
 python src/utils/energy_profiler.py --model models/quantized_cnn.tflite --duration 60
 📊 Performance Results
 Our optimized models achieve compelling performance trade-offs:
